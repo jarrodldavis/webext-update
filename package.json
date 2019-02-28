@@ -33,6 +33,10 @@
     "url": "https://github.com/jarrodldavis/webext-update/issues"
   },
   "homepage": "https://github.com/jarrodldavis/webext-update#readme",
+  "engines": {
+    "node": "11.10.x",
+    "npm": "6.7.x"
+  },
   "devDependencies": {
     "@jarrodldavis/remark-changelog-version-bump": "^0.1.0",
     "@types/bunyan": "^1.8.5",
