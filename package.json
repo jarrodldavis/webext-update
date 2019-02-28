@@ -4,6 +4,7 @@
   "description": "A GitHub App that generates WebExtension update manifests from GitHub Releases",
   "main": "out/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\"",
     "preversion": "./version-scripts/run-preversion",
     "version": "./version-scripts/run-version",
@@ -32,6 +33,10 @@
   "homepage": "https://github.com/jarrodldavis/webext-update#readme",
   "devDependencies": {
     "@jarrodldavis/remark-changelog-version-bump": "^0.1.0",
+    "@types/bunyan": "^1.8.5",
+    "@types/express": "^4.16.1",
+    "@types/ioredis": "^4.0.8",
+    "@types/lru-cache": "^5.1.0",
     "remark-cli": "^6.0.1",
     "smee-client": "^1.0.2",
     "typescript": "^3.3.3333"
