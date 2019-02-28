@@ -48,5 +48,6 @@
   },
   "dependencies": {
     "probot": "^8.0.0-beta.10"
-  }
+  },
+  "heroku-run-build-script": true
 }

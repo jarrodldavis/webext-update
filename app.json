@@ -1,0 +1,41 @@
+{
+  "name": "webext-update",
+  "description": "A GitHub App that generates WebExtension update manifests from GitHub Releases",
+  "repository": "https://github.com/jarrodldavis/webext-update",
+  "website": "https://github.com/jarrodldavis/webext-update#readme",
+  "keywords": [
+    "probot",
+    "probot-app",
+    "github",
+    "github-app",
+    "github-releases",
+    "webext",
+    "web-ext",
+    "updates",
+    "update-manifest"
+  ],
+  "scripts": {},
+  "env": {
+    "LOG_LEVEL": "trace",
+    "LOG_FORMAT": "json",
+    "DISABLE_STATS": "true",
+    "WEBHOOK_SECRET": {
+      "required": true
+    },
+    "APP_ID": {
+      "required": true
+    },
+    "PRIVATE_KEY": {
+      "required": true
+    }
+  },
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {},
+  "addons": [],
+  "success_url": "/"
+}
