@@ -5,7 +5,7 @@
   "main": "out/index.js",
   "scripts": {
     "dev": "nodemon -V -w . -e ts,js,json -w .env -x probot run ./scripts/ts-node.js ./index.ts",
-    "build": "tsc",
+    "build": "rimraf ./out && tsc",
     "start": "probot run ./out/index.js",
     "test": "echo \"Error: no test specified\"",
     "preversion": "./version-scripts/run-preversion",
@@ -41,6 +41,7 @@
     "@types/lru-cache": "^5.1.0",
     "nodemon": "^1.18.10",
     "remark-cli": "^6.0.1",
+    "rimraf": "^2.6.3",
     "smee-client": "^1.0.2",
     "ts-node": "^8.0.2",
     "typescript": "^3.3.3333"
